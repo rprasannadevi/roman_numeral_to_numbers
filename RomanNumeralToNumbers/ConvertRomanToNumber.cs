@@ -5,11 +5,9 @@ namespace RomanNumeralToNumbers
 {
     public class ConvertRomanToNumber
     {
-
-        int iValue;
         public void GetNumericValue(List<RomanNumeric> romannumerals, string[] sRomanToConvert)
         {
-
+            int iValue;
             foreach (var s in sRomanToConvert)
             {
                 var pNumeric = 0;
@@ -36,7 +34,7 @@ namespace RomanNumeralToNumbers
             }
         }
 
-        public static int GetNumericFromRoman(List<RomanNumeric> romannumerals, string roman)
+        public int GetNumericFromRoman(List<RomanNumeric> romannumerals, string roman)
         {
             var pNumeric = 0;
             var cNumeric = 0;

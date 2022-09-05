@@ -29,7 +29,7 @@ public class RomantoNumberTests
                  RN1, RN2, RN3, RN4, RN5, RN6, RN7
             };
 
-        string[] sRomanToConvert = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" };
+        string[] sRomanToConvert = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "CCCLXV", "XLV", "CCLIV", "MMCCCLXV" };
 
         ConvertRomanToNumber.GetNumericValue(romannumerals, sRomanToConvert);
         //Assert.Pass();
@@ -64,8 +64,5 @@ public class RomantoNumberTests
         ConvertRomanToNumber.GetNumericFromRoman(romannumerals, "").Should().Be(0);
         ConvertRomanToNumber.GetNumericFromRoman(romannumerals, "DV").Should().Be(505);
         ConvertRomanToNumber.GetNumericFromRoman(romannumerals, "MMMDCCXCV").Should().Be(3795);
-
-
-
     }
 }

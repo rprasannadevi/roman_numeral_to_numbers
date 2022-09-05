@@ -14,11 +14,11 @@ var romannumerals = new List<RomanNumeric>
     RN1, RN2, RN3, RN4, RN5, RN6, RN7
 };
 
-string[] sRomanToConvert = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XLV", "CCLIV", "MMCCCLXV" };
+string[] sRomanToConvert = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "CCCLXV", "XLV", "CCLIV", "MMCCCLXV" };
 
-var covertRomanToNumerals = new ConvertRomanToNumber();
+var convertRomanToNumerals = new ConvertRomanToNumber();
 
-covertRomanToNumerals.GetNumericValue(romannumerals, sRomanToConvert);
+convertRomanToNumerals.GetNumericValue(romannumerals, sRomanToConvert);
 
 string? sRoman;
 Console.Write("Please Enter a Roman Numeral: ");
@@ -27,7 +27,7 @@ sRoman = Console.ReadLine();
 int iNumericValue;
 if (sRoman != null)
 {
-    iNumericValue = ConvertRomanToNumber.GetNumericFromRoman(romannumerals, sRoman);
+    iNumericValue = convertRomanToNumerals.GetNumericFromRoman(romannumerals, sRoman);
     Console.WriteLine($"The value of {sRoman}: " + iNumericValue);
 }
 else
